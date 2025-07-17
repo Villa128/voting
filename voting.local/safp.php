@@ -39,15 +39,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Вы уже голосовали и не можете голосовать повторно.";
         } 
         else { 
-            $sql1 = "INSERT INTO round1 (prname,canID)
+        $sql1 = "INSERT INTO round1 (prname,canID)
         VALUES ('$voter_name','$selected_option')";
         $result1 = mysqli_query($link, $sql1);
         echo "Вы выбрали: " . htmlspecialchars($selected_option) . "Ваше имя: " . htmlspecialchars($voter_name);
 
         }
-
-
-
         
     } else {
         echo "Пожалуйста, выберите вариант.";

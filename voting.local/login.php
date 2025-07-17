@@ -4,8 +4,6 @@ session_start();
 // Подключение к базе данных
 $mysqli = new mysqli("localhost", "jam1","root","democracy");
 
-
-
 if ($mysqli->connect_error) {
     die("Ошибка подключения: " . $mysqli->connect_error);
 }
@@ -24,7 +22,6 @@ if ($result) {
 }
 
 $mysqli->close();
-
 
 
 $error = '';

@@ -3,7 +3,7 @@
 // Подключение к базе данных
 $mysqli = new mysqli("localhost", "jam1","root","democracy");
 
-$link = mysqli_connect("localhost","jam1","root","democracy"); //Да, знаю, это можно обьеденить
+$link = mysqli_connect("localhost","jam1","root","democracy"); 
 
 if ($mysqli->connect_error) {
     die("Ошибка подключения: " . $mysqli->connect_error);
@@ -42,8 +42,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         VALUES ('$username','$user_pass')";
         $result1 = mysqli_query($link, $sql1);
         echo "ok";
-    
-    
 }
 
 }

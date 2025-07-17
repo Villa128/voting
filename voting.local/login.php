@@ -25,18 +25,7 @@ if ($result) {
 
 $mysqli->close();
 
-// Пример данных пользователей (обычно берутся из базы данных)
-//$users = [
-    //'user1' => 'password1',
-    //'user2' => 'password2',
-    //'user3' => 'password3',
-//];
 
-// Если пользователь уже авторизован, перенаправляем на защищённую страницу
-//if (isset($_SESSION['username'])) {
-    //header('Location: safp.php');
-    //exit;
-//}
 
 $error = '';
 

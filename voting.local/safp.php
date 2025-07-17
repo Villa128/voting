@@ -17,8 +17,6 @@ else {
 }
 
 
-
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Проверка, был ли выбран вариант
     if (isset($_POST['option'])) {
@@ -50,8 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Пожалуйста, выберите вариант.";
     }
 }
-
-
 
 
 //$sql2 = "SELECT * FROM acright WHERE ID LIKE '%$selected_option%'";
